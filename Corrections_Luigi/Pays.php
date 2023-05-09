@@ -25,5 +25,4 @@
         public function setNomPays(string $nomPays) :void { $this->nomPays = $nomPays; }
         public function getNomPays() :string { return $this->nomPays; }
     }
-
 ?>

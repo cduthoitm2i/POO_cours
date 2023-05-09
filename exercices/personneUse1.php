@@ -1,7 +1,7 @@
 <?php
 // personneUse1.php
 
-require_once("Personne.php");
+require_once("./Personne.php");
 
 // Instanciation d'un objet et utilisation
 $tintin = new Personne();
@@ -19,5 +19,5 @@ echo "Nom&nbsp;: " . $tintin->getNom() . "<br>";
 echo "Age&nbsp;: " . $tintin->getAge() . "<br>";
 // On affiche les informations de la seconde personne avec les class getNom et getAge définies dans le fichier Personne.php (class Personne)
 
-echo  "". $haddock->getNom() . " est âgé de " . $haddock->getAge() . "&nbsp;ans.<br>";
+echo  $haddock->getNom() . " est âgé de " . $haddock->getAge() . "&nbsp;ans.<br>";
 ?>

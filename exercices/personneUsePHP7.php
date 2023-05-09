@@ -1,7 +1,7 @@
 <?php
 // personneUse1.php
 
-require_once("Personne2.php");
+require_once("./PersonnePHP7.php");
 
 // Instanciation d'un objet et utilisation
 $tintin = new Personne();

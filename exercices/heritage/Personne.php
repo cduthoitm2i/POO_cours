@@ -1,14 +1,16 @@
 <?php
     // Personne.php
 
-    class Personne {
+    abstract class Personne {
         // Propriétés
         // On passe en protected pour avoir accès aux variables
-        protected $nom;
-        protected $age;
+        //protected $nom;
+        //protected $age;
+        private string $nom;
+        private int $age;
 
         // Méthodes
-        public function __construct($nom = "", $age = "") {
+        public function __construct(string $nom = "", int $age = 0) {
             $this->nom = $nom;
             $this->age = $age;
         }

@@ -5,9 +5,9 @@
 
     // Nouvelle classe qui utilise la class Personne
     class Salarie extends Personne {
-        private $salaire;
+        private float $salaire;
 
-        public function __construct($nom = "", $age = "", $salaire = "") {
+        public function __construct(string $nom = "", int $age = 0, $salaire = 0) {
             parent::__construct($nom, $age);
             $this->salaire = $salaire;
         }
@@ -23,7 +23,5 @@
         public function getSalaire(): string {
             return $this->salaire;
         }
-
-
     }
 ?>

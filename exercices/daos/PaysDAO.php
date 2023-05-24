@@ -36,7 +36,7 @@ class PaysDAO {
             // Valorisation des paramètres (les ?) avec le résultat de la sollicitation de la méthode GETTER de l'objet Pays
             $cmd->bindValue(1, $pays->getIdPays());
             $cmd->bindValue(2, $pays->getNomPays());
-            // On exécute la roquette
+            // On exécute la requête
             $cmd->execute();
             // Nombre de lignes affectées (0 ou 1)
             $affected = $cmd->rowCount();
